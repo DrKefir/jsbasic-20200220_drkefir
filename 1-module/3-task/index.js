@@ -3,10 +3,9 @@
  * @param {string} str
  * @returns {string}
  */
- use strict
-  function ucFirst(str) {
-    if (!str) return str;
-    alert( `Perwaja bukwa " ${str[0]} " izmenena v vaschem slowe na zaglawnuju bukwu:\n${str[0].toUpperCase()+str.slice(1)}`);
-    }
-    let str = prompt("Wwedite slowo: ");
-    ucFirst(str);
+ function ucFirst(str) {
+   if (!str) return str;
+   return str[0].toUpperCase() + str.slice(1);
+   }
+   let str = prompt("Wwedite slowo: ");
+   alert( `Perwaja bukwa izmenena v vaschem slowe na zaglawnuju bukwu:\n${ucFirst(str)}`);
